@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: rgb(211, 205, 205);
+}
+
+header {
+  background: #2f3337;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 8%;
+}
+
+.logo {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #ddd;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 60px 8%;
+  flex-wrap: wrap;
+}
+
+.image-side {
+  position: relative;
+  width: 420px;
+  height: 420px;
+}
+
+.image-side img {
+  position: absolute;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.big-img {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.small-img {
+  width: 60%;
+  height: 60%;
+  bottom: -20px;
+  left: -20px;
+  border: 5px solid #d3cfcf;
+}
+
+.text-side {
+  max-width: 500px;
+}
+
+.text-side h1 {
+  margin-bottom: 15px;
+}
+
+.text-side .intro {
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 500;
+}
+
+.text-side h3 {
+  margin-top: 15px;
+  color: #141710;
+}
+
+.text-side p {
+  color: #626212;
+  margin-bottom: 10px;
+}
+
+.text-side button {
+  margin-top: 15px;
+  background-color: rgb(57, 52, 52);
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.text-side button:hover {
+  background-color: black;
+}
+
+@media (max-width: 992px) {
+  .about {
+    gap: 40px;
+  }
+
+  .image-side {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-side {
+    width: 280px;
+    height: 280px;
+  }
+
+  .small-img {
+    left: 10px;
+    bottom: -10px;
+  }
+}
