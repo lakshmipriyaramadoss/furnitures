@@ -30,14 +30,16 @@
     <p><strong>Phone:</strong> +91 XXXXXXXXXX</p>
   </div>
 
-  <form class="contact-form">
-    <input type="text" placeholder="Enter your name" required>
-    <input type="email" placeholder="Enter your email" required>
-    <input type="tel" placeholder="Enter your phone number">
+  <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="4cdaa27d-15a9-45fd-9c6d-585b79c67748">
+    <input type="text" name="name" placeholder="Enter your name" required>
+    <input type="email" name="email" placeholder="Enter your email" required>
+    <input type="tel" name="phone" placeholder="Enter your phone number">
     <button type="submit">Submit</button>
   </form>
 
 </section>
 
 </body>
+
 </html>
