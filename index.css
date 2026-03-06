@@ -71,8 +71,7 @@ header {
   font-weight: 300;
 }
 
-.hero-text button {
-  margin-top: 15px;
+.hero-text button a {
   padding: 10px 20px;
   border: none;
   border-radius: 8px;
@@ -81,6 +80,10 @@ header {
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
+}
+
+.hero-text button{
+  margin-top: 15px;
 }
 
 .hero-text button:hover {
@@ -132,4 +135,5 @@ header {
   .hero-text button {
     width: 160px;
   }
+
 }
